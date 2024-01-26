@@ -88,7 +88,7 @@ app.post("/districts/", async (request, response) => {
        )
   `;
   const dbResponse = await db.run(addDistrictQuery);
-  const stateId = dbResponse.last_ID;
+  //const stateId = dbResponse.last_ID;
   response.send("District Successfully Added");
 });
 
